@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | QR code component</title>
 
-  <style>
-    :root {
-      --white: hsl(0, 0%, 100%);
-      --slate-300: hsl(212, 45%, 89%);
-      --slate-500: hsl(216, 15%, 48%);
-      --slate-900: hsl(218, 44%, 22%);
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Outfit', sans-serif;
-      background-color: var(--slate-300);
-      color: var(--slate-500);
-      margin: 0;
-    }
-    .container {
-      width: 260px;
-      max-width: 375px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: var(--white);
-      border-radius: 16px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .small-image {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .title {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--slate-900);
-      margin: 20px 0 10;
-    }
-    .description {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--slate-500);
-    }
-
-    @media (min-width: 1440px) {
-      .container {
-        max-width: 375px;
+    <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --slate-300: hsl(212, 45%, 89%);
+        --slate-500: hsl(216, 15%, 48%);
+        --slate-900: hsl(218, 44%, 22%);
       }
-    }
-  </style>
-</head>
-<body>
 
-  <div class="container">
-    <div class="image-container">
-      <img src="images/image-qr-code.png" class="small-image">
-    </div>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Outfit', sans-serif;
+        background-color: var(--slate-300);
+        color: var(--slate-500);
+        margin: 0;
+      }
+      .container {
+        width: 260px;
+        max-width: 375px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: var(--white);
+        border-radius: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .small-image {
+        width: 100%;
+        border-radius: 12px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--slate-900);
+        margin: 20px 0 10;
+      }
+      .description {
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--slate-500);
+      }
 
-    <div class="title">
-      Improve your front-end skills by building projects
-    </div>
-    <div class="description">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </div>
-  </div>
-</body>
+      @media (min-width: 1440px) {
+        .container {
+          max-width: 375px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <main class="container">
+      <div class="image-container">
+        <img src="images/image-qr-code.png" alt="QR Code" class="small-image">
+      </div>
+
+      <h1 class="title">
+        Improve your front-end skills by building projects
+      </h1>
+
+      <div class="description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
+    </main>
+  </body>
 </html>
